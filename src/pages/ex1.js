@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import { View, Text } from 'react-native';
 import Header from '../components/Header/header';
 import Footer from '../components/Footer/Footer';
+import MainContent from '../components/MainComponent/MainContent';
 
 export class Ex1 extends Component {
   render() {
     return (
-        <View style={styles.mainContent}>
+        <View style={styles.container}>
             <Header/>
-            <Text>Conteúdo Principal</Text>
+            <MainContent />
             <Footer/>
         </View>
     )
@@ -16,11 +17,9 @@ export class Ex1 extends Component {
 }
 
 const styles = {
-    mainContent: {
-        padding: 20,
-        backgroundColor: '#f0f0f0',
-        alignItems: 'center',
-      }
+    container: {
+        flex: 1,
+    }
 }
 
 export default Ex1
