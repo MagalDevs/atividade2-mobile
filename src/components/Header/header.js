@@ -6,4 +6,12 @@ const Header = () => (
     </View>
   );
 
-  
+const styles = {
+    header: {
+        padding: 20,
+        backgroundColor: '#f0f0f0',
+        alignItems: 'center',
+      }
+}
+
+export default Header;
